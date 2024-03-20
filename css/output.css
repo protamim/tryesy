@@ -1001,8 +1001,8 @@ video {
   max-width: 25rem;
 }
 
-.max-w-\[33\.625rem\] {
-  max-width: 33.625rem;
+.max-w-\[30\.625rem\] {
+  max-width: 30.625rem;
 }
 
 .max-w-\[34rem\] {
@@ -1024,10 +1024,6 @@ video {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
-}
-
-.max-w-\[30\.625rem\] {
-  max-width: 30.625rem;
 }
 
 .flex-shrink {
@@ -2496,6 +2492,14 @@ video {
   line-height: 1.625;
 }
 
+.leading-\[64px\] {
+  line-height: 64px;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .text-\[\#22262D\] {
   --tw-text-opacity: 1;
   color: rgb(34 38 45 / var(--tw-text-opacity));
@@ -3316,9 +3320,14 @@ body{
     padding-bottom: 1.5rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:text-7xl {
@@ -3326,9 +3335,12 @@ body{
     line-height: 1;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .lg\:leading-\[75px\] {
+    line-height: 75px;
+  }
+
+  .lg\:leading-\[65px\] {
+    line-height: 65px;
   }
 }
 
@@ -3364,16 +3376,6 @@ body{
 
   .xl\:text-8xl {
     font-size: 6rem;
-    line-height: 1;
-  }
-
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
     line-height: 1;
   }
 
