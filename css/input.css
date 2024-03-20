@@ -1,0 +1,13 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    background: #141820;
+    color: #FFF;
+}
