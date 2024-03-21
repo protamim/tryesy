@@ -9,7 +9,8 @@ module.exports = {
         'body-color': '#141820'
       },
       backgroundImage: {
-        'about-pattern': 'url("/assets/services-line-bg.png")'
+        'about-pattern': 'url("/assets/services-line-bg.png")',
+        'newsLetter-bg': 'url("/assets/newsletter-bg.png")'
       }
     },
   },
