@@ -1620,6 +1620,15 @@ video {
   row-gap: 2rem;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1630,6 +1639,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2088,6 +2103,11 @@ video {
   border-color: transparent;
 }
 
+.border-secondary-color {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 239 91 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2311,6 +2331,14 @@ video {
   padding-top: 4rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2390,6 +2418,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-black {
@@ -2490,14 +2523,6 @@ video {
 
 .leading-relaxed {
   line-height: 1.625;
-}
-
-.leading-\[64px\] {
-  line-height: 64px;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
 }
 
 .text-\[\#22262D\] {
@@ -3242,6 +3267,10 @@ body{
     flex-basis: 50%;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -3256,6 +3285,11 @@ body{
          column-gap: 1.5rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -3264,11 +3298,6 @@ body{
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:leading-\[63px\] {
@@ -3335,12 +3364,12 @@ body{
     line-height: 1;
   }
 
-  .lg\:leading-\[75px\] {
-    line-height: 75px;
-  }
-
   .lg\:leading-\[65px\] {
     line-height: 65px;
+  }
+
+  .lg\:leading-\[75px\] {
+    line-height: 75px;
   }
 }
 
