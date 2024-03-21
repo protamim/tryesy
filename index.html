@@ -1385,7 +1385,9 @@
     <section class="pb-14">
       <div class="max-w-[75rem] mx-auto px-4 relative">
         <!-- background -->
-        <div class="before:absolute before:w-full before:h-full before:bg-newsLetter-bg before:bg-cover before:bg-no-repeat before:mix-blend-color-dodge before:top-0 before:left-0 before:-z-10"></div>
+        <div
+          class="before:absolute before:w-full before:h-full before:bg-newsLetter-bg before:bg-cover before:bg-no-repeat before:mix-blend-color-dodge before:top-0 before:left-0 before:-z-10"
+        ></div>
 
         <div class="py-14 lg:py-20">
           <!-- top -->
@@ -1402,14 +1404,26 @@
             <h2
               class="text-3xl text-center font-medium mb-5 sm:text-4xl lg:leading-[50px]"
             >
-              Subscribe to our newsletter and get 15% off your next 
+              Subscribe to our newsletter and get 15% off your next
               <span class="text-[#FD4185] relative z-10 text-nowrap">
                 Digital Agency
                 <!-- line vector -->
-                  <svg class="w-32 absolute -bottom-3 left-0 z-30" xmlns="http://www.w3.org/2000/svg" width="204" height="17" viewBox="0 0 204 17" fill="none">
-                    <path d="M1.52137 4.60245C32.5332 2.24214 115.957 -0.161247 201.56 9.10766M1.84812 14.5959C18.7615 13.505 64.9955 11.6133 100.728 13.0647" stroke="#FD4185" stroke-width="3" stroke-linecap="round"/>
-                  </svg>
-             
+                <svg
+                  class="w-32 absolute -bottom-3 left-0 z-30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="204"
+                  height="17"
+                  viewBox="0 0 204 17"
+                  fill="none"
+                >
+                  <path
+                    d="M1.52137 4.60245C32.5332 2.24214 115.957 -0.161247 201.56 9.10766M1.84812 14.5959C18.7615 13.505 64.9955 11.6133 100.728 13.0647"
+                    stroke="#FD4185"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                </svg>
+
                 <!-- <hr class="absolute bottom-0 left-0 w-32 h-[2px] border-none bg-rose-500 z-20 -rotate-[5deg]">
                 <hr class="absolute -bottom-3 left-0 w-16 h-[2px] border-none bg-rose-500 z-20 -rotate-[5deg] skew-x-6"> -->
               </span>
@@ -1419,10 +1433,23 @@
           <!-- form -->
           <form class="text-center">
             <div class="relative overflow-hidden max-w-[29.375rem] mx-auto">
-              <input type="email" name="userEmail" id="newsLetter" placeholder="Your email to start" class="h-11 pl-3 pr-[37%] text-black outline-none border border-transparent placeholder:text-stone-600 placeholder:text-sm text-sm w-full">
+              <input
+                type="email"
+                name="userEmail"
+                id="newsLetter"
+                placeholder="Your email to start"
+                class="h-11 pl-3 pr-[37%] text-black outline-none border border-transparent placeholder:text-stone-600 placeholder:text-sm text-sm w-full"
+              />
 
-              <button type="submit" class="absolute right-1 top-1/2 -translate-y-1/2 w-[35%]">
-                <a href="#" class="bg-teal-400 h-9 text-sm text-black flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black hover:scale-110 origin-center">Subscribe</a>
+              <button
+                type="submit"
+                class="absolute right-1 top-1/2 -translate-y-1/2 w-[35%]"
+              >
+                <a
+                  href="#"
+                  class="bg-teal-400 h-9 text-sm text-black flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black hover:scale-110 origin-center"
+                  >Subscribe</a
+                >
               </button>
             </div>
             <!-- Check -->
@@ -1433,11 +1460,256 @@
               <p class="text-sm">Weekly Design Newsletter</p>
             </div>
           </form>
-
         </div>
       </div>
     </section>
     <!-- Newsletter END -->
+
+    <!-- Footer START -->
+    <footer class="pt-10">
+      <div class="max-w-[75rem] mx-auto">
+        <div class="px-4 flex flex-wrap justify-between gap-x-3 gap-y-12">
+          <!-- Site -->
+          <div class="basis-full md:basis-auto">
+            <!-- footer logo -->
+            <a href="#" class="flex items-center gap-x-3 mb-5">
+              <img src="/assets/icons/tryesy-logo.png" alt="tryesy logo" />
+              <span class="text-xl font-medium">Tryesy.</span>
+            </a>
+            <!-- slogan -->
+            <p class="text-sm text-stone-300 mb-6 max-w-[23.4375rem]">
+              We are committed to helping you succeed, and we will work with you
+              every step of the way.
+            </p>
+            <!-- updates -->
+            <a
+              href="#"
+              class="flex items-center gap-x-3 transition-all duration-300 ease-in-out hover:opacity-65"
+            >
+              <span class="text-sm">Get Updates</span>
+              <span class="text-sm">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+          <!-- INFO -->
+          <div>
+            <!-- title -->
+            <h5 class="text-xl font-normal uppercase mb-4">Info</h5>
+            <ul class="flex flex-col gap-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Company</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Video Tutorials</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Careers</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- COMPANY -->
+          <div>
+            <!-- title -->
+            <h5 class="text-xl font-normal uppercase mb-4">Company</h5>
+            <ul class="flex flex-col gap-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Products</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Services</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Customers</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Pricing</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Help Center</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- USE CASES -->
+          <div>
+            <!-- title -->
+            <h5 class="text-xl font-normal uppercase mb-4">Use Cases</h5>
+            <ul class="flex flex-col gap-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Marketing</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Integrations</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Templates</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:text-primary-color"
+                >
+                  <span class="text-xs">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="text-sm">Portfolios</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BOTTOM -->
+        <div
+          class="bg-[#1D2129] px-4 py-7 mt-10 flex flex-col gap-y-6 sm:flex-row sm:justify-between sm:items-center rounded-t-2xl"
+        >
+          <!-- left -->
+          <div class="sm:flex sm:items-center sm:gap-x-4">
+            <h5 class="uppercase text-stone-400 text-sm mb-4 sm:mb-0">Follow US</h5>
+            <ul class="flex items-center gap-x-5">
+              <li>
+                <a
+                  href="#"
+                  class="bg-[#2B2E36] block rounded-full text-stone-400 transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f flex items-center justify-center w-8 h-8"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="bg-[#2B2E36] block rounded-full text-stone-400 transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black"
+                >
+                  <i
+                    class="fa-brands fa-x-twitter flex items-center justify-center w-8 h-8"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="bg-[#2B2E36] block rounded-full text-stone-400 transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black"
+                >
+                  <i
+                    class="fa-brands fa-linkedin-in flex items-center justify-center w-8 h-8"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- right -->
+          <div>
+            <p class="text-stone-400">
+              &copy; 2024
+              <span class="text-white font-medium">Tryesy.</span> 
+              All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
 
     <!-- jquery CDN -->
     <script
