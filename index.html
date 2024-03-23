@@ -9,11 +9,11 @@
       href="./assets//icons/tryesy-logo.png"
       type="image/x-icon"
     />
-    <!-- Google Font - Manrope -->
+    <!-- Google Font - Manrope, Roboto Condensed -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesome CDN -->
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
-    <header>
+    <header class="2xl:pb-[70px]">
       <!-- navbar start -->
       <nav class="relative max-w-[105rem] mx-auto">
         <!-- Nav for mobile only -->
@@ -37,7 +37,17 @@
             <!-- Logo -->
             <a href="#" class="flex items-center gap-x-2">
               <img src="./assets/icons/tryesy-logo.png" alt="tryesy" />
-              <span>Tryesy.</span>
+              <div>
+                <div
+                  class="w-full max-w-[auto] mt-0 min-h-[auto] text-left mb-0"
+                >
+                  <p
+                    class="text-[#ffffff] text-[30px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-extrabold mb-0 tracking-[-1px] normal-case"
+                  >
+                    tryesy.
+                  </p>
+                </div>
+              </div>
             </a>
             <!-- menu bar -->
             <button
@@ -116,55 +126,87 @@
         <!-- nav for larger devices -->
         <div class="hidden md:block">
           <div class="flex items-center justify-between py-3 px-4 lg:py-6">
-            <div class="flex gap-x-8 items-center">
+            <div class="flex lg:gap-x-16 gap-x-6 items-center">
               <!-- Logo -->
               <a href="#" class="flex items-center gap-x-2">
                 <img src="./assets/icons/tryesy-logo.png" alt="tryesy" />
-                <span class="text-xl">Tryesy.</span>
+                <div>
+                  <div
+                    class="w-full max-w-[auto] mt-0 min-h-[auto] text-left mb-0"
+                  >
+                    <p
+                      class="text-[#ffffff] text-[30px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-extrabold mb-0 tracking-[-1px] normal-case"
+                    >
+                      tryesy.
+                    </p>
+                  </div>
+                </div>
               </a>
               <!-- nav items -->
-              <ul class="flex items-start gap-x-4">
+              <ul class="flex items-start gap-x-6">
                 <li>
                   <a
                     href="#"
-                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline"
+                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline text-[#ffffff] text-[16px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-medium mb-0 tracking-[-1px] normal-case"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline"
+                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline text-[#ffffff] text-[16px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-medium mb-0 tracking-[-1px] normal-case"
                     >Features</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline"
+                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline text-[#ffffff] text-[16px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-medium mb-0 tracking-[-1px] normal-case"
                     >How it works</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline"
+                    class="transition-all ease-in-out duration-300 block hover:opacity-80 hover:underline text-[#ffffff] text-[16px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-medium mb-0 tracking-[-1px] normal-case"
                     >Contact</a
                   >
                 </li>
               </ul>
             </div>
 
-            <div class="flex items-center">
+            <div class="flex items-center gap-x-6">
               <!-- Search -->
-              <form class="w-32">
+              <form class="w-[84px]">
                 <div class="relative">
                   <span
-                    class="absolute top-1/2 left-2 -translate-y-1/2 text-white"
-                    ><i class="fa-solid fa-magnifying-glass"></i
-                  ></span>
+                    class="absolute top-1/2 left-0 -translate-y-1/2 text-white w-5 h-5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.88888 18.7778C14.7981 18.7778 18.7778 14.7981 18.7778 9.88888C18.7778 4.97969 14.7981 1 9.88888 1C4.97969 1 1 4.97969 1 9.88888C1 14.7981 4.97969 18.7778 9.88888 18.7778Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21 21L16.1666 16.1666"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
                   <input
-                    class="outline-none border-none border-stone-300 pl-8 text-white py-2 rounded-md placeholder:text-white bg-transparent w-full"
+                    class="outline-none border-none border-stone-300 pl-8 text-white py-2 rounded-md placeholder:text-white bg-transparent w-full text-[14px] not-italic mt-0 text-left font-['Manrope',_sans-serif] font-normal mb-0 tracking-[-1px] normal-case"
                     type="text"
                     placeholder="search..."
                   />
@@ -173,11 +215,11 @@
 
               <!-- quote -->
               <button
-                class="bg-primary-color px-5 py-2 flex items-center max-w-max group transition-all duration-300 ease-in-out border border-transparent hover:border hover:border-stone-300 hover:bg-body-color"
+                class="bg-primary-color px-6 py-4 flex items-center max-w-max group transition-all duration-300 ease-in-out border border-transparent hover:border hover:border-stone-300 hover:bg-body-color"
               >
                 <a
                   href="#"
-                  class="text-sm text-black transition-all ease-in-out duration-300 group-hover:text-white"
+                  class="text-sm text-[#141820] text-[16px] leading-normal font-semibold tracking-[-0.32px] transition-all ease-in-out duration-300 group-hover:text-white"
                   >Get a quote</a
                 >
               </button>
@@ -191,24 +233,28 @@
       <div class="pt-16 relative overflow-hidden">
         <div class="max-w-[105rem] relative mx-auto">
           <!-- banner top -->
-          <div class="max-w-[34rem] md:max-w-[44.75rem] mb-12 px-4">
+          <div
+            class="max-w-[34rem] md:max-w-[44.75rem] mb-12 px-4 2xl:max-w-[62rem]"
+          >
             <div>
               <h2
-                class="text-3xl leading-relaxed text-white font-semibold mb-3 sm:text-4xl sm:leading-[46px] md:text-5xl md:leading-[63px] lg:text-6xl lg:leading-[75px]"
+                class="text-3xl leading-relaxed tracking-[-1.6px] text-white font-semibold mb-3 sm:text-4xl sm:leading-[46px] md:text-5xl md:leading-[63px] 2xl:text-[80px] 2xl:leading-[94px] 2xl:font-extrabold 2xl:mb-[40px]"
               >
                 The types of digital products that you build
               </h2>
               <p
-                class="text-sm text-stone-200 font-light mb-6 md:mb-8 lg:mb-10 xl:mb-14"
+                class="text-sm text-[#B4B7BE] font-light mb-6 md:mb-8 lg:mb-10 2xl:text-[20px] 2xl:font-normal 2xl:leading-normal 2xl:tracking-[-0.4px] xl:mb-14 2xl:mb-[71px]"
               >
                 We see the possibilities that technology offers, and we work to
                 make them a reality.
               </p>
 
-              <div class="flex items-center gap-x-2 md:gap-x-4 lg:gap-x-6">
+              <div
+                class="flex items-center gap-x-2 md:gap-x-4 lg:gap-x-6 2xl:gap-x-[14px]"
+              >
                 <!-- View details -->
                 <button
-                  class="py-2 px-4 border border-stone-500 transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black hover:border-transparent"
+                  class="py-2 px-4 2xl:py-5 2xl:px-7 border border-stone-500 transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black hover:border-transparent"
                 >
                   <a href="#" class="flex items-center gap-x-2"
                     >View details
@@ -255,19 +301,65 @@
           />
 
           <!-- Sub line -->
-          <div class="bg-rose-600 overflow-hidden">
-            <ul class="flex items-center gap-x-4 list-disc h-11">
-              <li class="px-4 text-nowrap">UI design</li>
-              <li class="px-4 text-nowrap">Digital Agency</li>
-              <li class="px-4 text-nowrap">Digital Solution</li>
-              <li class="px-4 text-nowrap">Strategy</li>
-              <li class="px-4 text-nowrap">Business Growth</li>
-              <li class="px-4 text-nowrap">Development</li>
-              <li class="px-4 text-nowrap">IT Company</li>
-              <li class="px-4 text-nowrap">SEO Agency</li>
-              <li class="px-4 text-nowrap">Consulting</li>
-              <li class="px-4 text-nowrap">Branding</li>
-              <li class="px-4 text-nowrap">Lifetime Update</li>
+          <div class="bg-rose-600 overflow-hidden max-w-[2072px]">
+            <ul
+              class="max-w-[1980px] flex items-center gap-x-4 list-disc h-[70px] 2xl:gap-x-[60px]"
+            >
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                UI design
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Digital Agency
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Digital Solution
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Strategy
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Business Growth
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Development
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                IT Company
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                SEO Agency
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Consulting
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Branding
+              </li>
+              <li
+                class="px-4 text-nowrap 2xl:text-[20px] font-['Roboto_Condensed',_sans-serif] 2xl:font-medium 2xl:leading-[64px] tracking-[-0.4px] uppercase"
+              >
+                Lifetime Update
+              </li>
             </ul>
           </div>
         </div>
@@ -281,23 +373,25 @@
     </header>
 
     <!-- Services Start -->
-    <section class="py-14 lg:py-20">
+    <section class="py-14 lg:py-20 2xl:pb-[160px]">
       <div class="max-w-[67rem] mx-auto px-4">
         <div class="relative sm:flex sm:justify-between gap-x-10">
           <!-- About -->
           <div class="mb-10 sm:mb-0 basis-1/2">
             <!-- sub title -->
-            <h5 class="list-disc uppercase text-stone-300 text-sm mb-2 sm:mb-5">
+            <h5
+              class="list-disc uppercase text-stone-300 text-sm mb-2 sm:mb-5 2xl:font-bold 2xl:leading-normal 2xl:tracking-[1.4px]"
+            >
               <li class="list-disc">About US</li>
             </h5>
             <h3
-              class="text-3xl text-white leading-[44px] mb-8 max-w-[25rem] sm:text-4xl sm:max-w-[16rem] md:text-5xl md:max-w-[22rem] md:leading-[64px] lg:text-6xl lg:leading-[75px]"
+              class="text-3xl text-white leading-[44px] mb-8 max-w-[25rem] sm:text-4xl sm:max-w-[16rem] md:text-5xl md:max-w-[22rem] md:leading-[64px] lg:text-6xl lg:leading-[75px] 2xl:w-[454px] 2xl:text-[60px] 2xl:font-bold 2xl:leading-[64px] 2xl:tracking-[-1.2px] 2xl:max-w-none 2xl:mb-[50px]"
             >
               We're architects of the digital landscape
             </h3>
             <!-- Read More Button -->
             <button
-              class="py-2 px-4 border border-stone-500 transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black hover:border-transparent"
+              class="py-2 px-4 2xl:py-[19px] 2xl:px-[30px] border border-stone-500 transition-all duration-300 ease-in-out hover:bg-primary-color hover:text-black hover:border-transparent"
             >
               <a href="#" class="flex items-center gap-x-2"
                 >Read More
@@ -310,69 +404,83 @@
 
           <!-- Service Lists -->
           <div class="basis-1/2">
-            <ul class="grid grid-cols-2 gap-x-6 gap-y-10">
-              <li class="flex flex-col gap-y-3">
+            <ul
+              class="grid grid-cols-2 gap-x-6 gap-y-10 2xl:gap-y-[80px] 2xl:gap-x-[160px]"
+            >
+              <li class="flex flex-col gap-y-3 2xl:gap-y-[33px]">
                 <img
                   class="max-w-max"
                   src="./assets/icons/services-icon-1.png"
                   alt="service-tryesy"
                 />
-                <h4>
+                <h4
+                  class="2xl:text-[24px] 2xl:font-medium 2xl:leading-[30px] 2xl:tracking-[-0.48px]"
+                >
                   Quality <br />
                   Programming
                 </h4>
               </li>
-              <li class="flex flex-col gap-y-3">
+              <li class="flex flex-col gap-y-3 2xl:gap-y-[33px]">
                 <img
                   class="max-w-max"
                   src="./assets/icons/services-icon-2.png"
                   alt="service-tryesy"
                 />
-                <h4>
+                <h4
+                  class="2xl:text-[24px] 2xl:font-medium 2xl:leading-[30px] 2xl:tracking-[-0.48px]"
+                >
                   Modern <br />
                   Technologies
                 </h4>
               </li>
-              <li class="flex flex-col gap-y-3">
+              <li class="flex flex-col gap-y-3 2xl:gap-y-[33px]">
                 <img
                   class="max-w-max"
                   src="./assets/icons/services-icon-3.png"
                   alt="service-tryesy"
                 />
-                <h4>
+                <h4
+                  class="2xl:text-[24px] 2xl:font-medium 2xl:leading-[30px] 2xl:tracking-[-0.48px]"
+                >
                   Intelligent <br />
                   Image Editing
                 </h4>
               </li>
-              <li class="flex flex-col gap-y-3">
+              <li class="flex flex-col gap-y-3 2xl:gap-y-[33px]">
                 <img
                   class="max-w-max"
                   src="./assets/icons/services-icon-4.png"
                   alt="service-tryesy"
                 />
-                <h4>
+                <h4
+                  class="2xl:text-[24px] 2xl:font-medium 2xl:leading-[30px] 2xl:tracking-[-0.48px]"
+                >
                   Project <br />
                   Development
                 </h4>
               </li>
-              <li class="flex flex-col gap-y-3">
+              <li class="flex flex-col gap-y-3 2xl:gap-y-[33px]">
                 <img
                   class="max-w-max"
                   src="./assets/icons/services-icon-5.png"
                   alt="service-tryesy"
                 />
-                <h4>
+                <h4
+                  class="2xl:text-[24px] 2xl:font-medium 2xl:leading-[30px] 2xl:tracking-[-0.48px]"
+                >
                   Social <br />
                   Marketing
                 </h4>
               </li>
-              <li class="flex flex-col gap-y-3">
+              <li class="flex flex-col gap-y-3 2xl:gap-y-[33px]">
                 <img
                   class="max-w-max"
                   src="./assets/icons/services-icon-6.png"
                   alt="service-tryesy"
                 />
-                <h4>
+                <h4
+                  class="2xl:text-[24px] 2xl:font-medium 2xl:leading-[30px] 2xl:tracking-[-0.48px]"
+                >
                   Awards <br />
                   achievement
                 </h4>
@@ -382,10 +490,10 @@
 
           <!-- About pattern -->
           <div
-            class="absolute -z-20 top-0 left-[40%] sm:left-[10%] md:left-[15%] md:top-[10%]"
+            class="absolute -z-20 top-0 left-[40%] sm:left-[10%] md:left-[15%] md:top-[10%] 2xl:left-[20px] 2xl:-top-[10%]"
           >
             <img
-              class="w-[70%] sm:w-[50%] md:w-[60%]"
+              class="w-[70%] sm:w-[50%] md:w-[60%] 2xl:w-[500px] 2xl:h-[502px]"
               src="/assets/services-line-bg.png"
               alt="about-pattern"
             />
@@ -396,11 +504,11 @@
     <!-- Services End -->
 
     <!-- About Start -->
-    <section class="pb-14">
+    <section class="pb-14 2xl:pb-[140px]">
       <div class="max-w-[74.625rem] mx-auto px-4">
-        <div class="relative sm:flex sm:gap-x-6 xl:ml-14">
+        <div class="relative sm:flex sm:gap-x-6">
           <div
-            class="sm:basis-1/2 sm:block flex items-stretch gap-x-6 mb-8 sm:mb-0"
+            class="sm:w-[50%] sm:block flex items-stretch gap-x-6 mb-8 sm:mb-0"
           >
             <!-- about left -->
             <div class="basis-1/2">
@@ -420,63 +528,87 @@
           </div>
 
           <!-- About right column -->
-          <div class="sm:basis-1/2">
-            <div class="hidden sm:block sm:h-20 sm:mb-6 md:h-28 lg:h-52">
+          <div class="sm:w-[50%]">
+            <div
+              class="hidden sm:block sm:h-20 sm:mb-6 md:h-28 lg:h-52 2xl:mb-[50px]"
+            >
               <img
                 class="h-full w-full object-cover"
                 src="assets/about-right.jpeg"
                 alt=""
               />
             </div>
-            <!-- sub title -->
-            <h5 class="list-disc uppercase text-stone-300 text-sm mb-2 sm:mb-5">
-              <li class="list-disc">Our Goal</li>
-            </h5>
-            <h3
-              class="text-3xl font-semibold mb-5 md:text-4xl lg:text-5xl lg:leading-[65px]"
-            >
-              We are the ones who create the future.
-            </h3>
-            <p class="text-sm font-light mb-8">
-              Whether it's on a website, an app, or a search engine, this simple
-              phrase can evoke a mix of emotions from confusion to exasperation.
-              But fear not, for in these moments, there are strategies and
-              solutions that can help you find your way.
-            </p>
-            <!-- Lists -->
-            <ul class="flex flex-col items-start gap-y-6">
-              <li class="flex items-center gap-x-3">
-                <span
-                  class="bg-gray-800 p-2 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:bg-lime-900"
-                >
-                  <img src="assets/icons/about-icon-bg.png" alt="tryesy icon" />
-                </span>
-                <span class="text-base font-normal">Improve SEO Ranking</span>
-              </li>
-              <li class="flex items-center gap-x-3">
-                <span
-                  class="bg-gray-800 p-2 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:bg-lime-900"
-                >
-                  <img src="assets/icons/about-icon-bg.png" alt="tryesy icon" />
-                </span>
-                <span class="text-base font-normal"
-                  >Search Engine Optimization</span
-                >
-              </li>
-              <li class="flex items-center gap-x-3">
-                <span
-                  class="bg-gray-800 p-2 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:bg-lime-900"
-                >
-                  <img src="assets/icons/about-icon-bg.png" alt="tryesy icon" />
-                </span>
-                <span class="text-base font-normal">Market Research</span>
-              </li>
-            </ul>
+            <div class="lg:pl-[72px] 2xl:pl-[172px]">
+              <!-- sub title -->
+              <h5
+                class="list-disc uppercase text-stone-300 text-sm mb-2 sm:mb-5 2xl:font-bold 2xl:leading-normal 2xl:tracking-[1.4px] 2xl:mb-[26px]"
+              >
+                <li class="list-disc">Our Goal</li>
+              </h5>
+              <h3
+                class="text-3xl text-white leading-[44px] mb-8 max-w-[25rem] sm:text-4xl md:text-5xl md:leading-[64px] lg:text-[50px] lg:max-w-none lg:leading-[75px] 2xl:w-[582px] 2xl:text-[60px] 2xl:font-bold 2xl:leading-[64px] 2xl:tracking-[-1.2px] 2xl:max-w-none 2xl:mb-[30px]"
+              >
+                We are the ones who create the future.
+              </h3>
+              <p
+                class="text-sm font-light mb-8 2xl:text-[16px] 2xl:leading-[24px] 2xl:font-normal"
+              >
+                Whether it's on a website, an app, or a search engine, this
+                simple phrase can evoke a mix of emotions from confusion to
+                exasperation. But fear not, for in these moments, there are
+                strategies and solutions that can help you find your way.
+              </p>
+              <!-- Lists -->
+              <ul class="flex flex-col items-start gap-y-6 2xl:gap-y-[40px]">
+                <li class="flex items-center gap-x-3 2xl:gap-x-9">
+                  <span
+                    class="bg-gray-800 p-2 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:bg-lime-900 2xl:w-[60px] 2xl:h-[60px] 2xl:flex 2xl:items-center 2xl:justify-center"
+                  >
+                    <img
+                      src="assets/icons/about-icon-bg.png"
+                      alt="tryesy icon"
+                    />
+                  </span>
+                  <span
+                    class="text-base font-normal 2xl:text-[20px] 2xl:font-semibold 2xl:leading-[24px]"
+                    >Improve SEO Ranking</span
+                  >
+                </li>
+                <li class="flex items-center gap-x-3 2xl:gap-x-9">
+                  <span
+                    class="bg-gray-800 p-2 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:bg-lime-900 2xl:w-[60px] 2xl:h-[60px] 2xl:flex 2xl:items-center 2xl:justify-center"
+                  >
+                    <img
+                      src="assets/icons/about-icon-bg.png"
+                      alt="tryesy icon"
+                    />
+                  </span>
+                  <span
+                    class="text-base font-normal 2xl:text-[20px] 2xl:font-semibold 2xl:leading-[24px]"
+                    >Search Engine Optimization</span
+                  >
+                </li>
+                <li class="flex items-center gap-x-3 2xl:gap-x-9">
+                  <span
+                    class="bg-gray-800 p-2 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:bg-lime-900 2xl:w-[60px] 2xl:h-[60px] 2xl:flex 2xl:items-center 2xl:justify-center"
+                  >
+                    <img
+                      src="assets/icons/about-icon-bg.png"
+                      alt="tryesy icon"
+                    />
+                  </span>
+                  <span
+                    class="text-base font-normal 2xl:text-[20px] 2xl:font-semibold 2xl:leading-[24px]"
+                    >Market Research</span
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
 
           <!-- About rounded text -->
           <div
-            class="hidden sm:block sm:absolute sm:top-[30%] sm:left-[45%] sm:-translate-x-1/2 sm:w-16 lg:w-24 xl:w-28"
+            class="hidden sm:block sm:absolute sm:top-[30%] sm:left-[45%] sm:-translate-x-1/2 sm:w-16 lg:w-24 xl:w-28 2xl:w-[120px] 2xl:h-[120px]"
           >
             <img class="w-full h-full" src="assets/rounded.svg" alt="" />
           </div>
@@ -486,12 +618,12 @@
     <!-- About End -->
 
     <!-- Portfolio start -->
-    <section class="pb-14">
+    <section class="pb-14 2xl:pb-[140px]">
       <div class="max-w-[192rem] mx-auto">
         <!-- style text -->
-        <div class="overflow-hidden mb-6">
+        <div class="h-auto mb-8 2xl:mb-[60px] overflow-hidden">
           <h3
-            class="text-[#22262D] font-black text-4xl text-nowrap uppercase sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+            class="text-[#22262D] font-black text-4xl text-nowrap uppercase sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[140px] 2xl:font-extrabold 2xl:tracking-[-2.8px]"
           >
             We are the builders of the digital future
           </h3>
@@ -509,10 +641,16 @@
             />
             <!-- Hoverable card -->
             <div
-              class="bg-white px-6 py-3 max-w-max absolute -bottom-[6.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem]"
+              class="bg-white px-6 py-3 max-w-max absolute -bottom-[8.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem] 2xl:py-6 2xl:px-8"
             >
-              <h4 class="text-black text-xl font-medium">Usability</h4>
-              <p class="text-black font-normal text-sm">
+              <h4
+                class="text-[#141820] text-xl font-medium 2xl:text-[30px] 2xl:font-bold 2xl:tracking-[-0.6px] 2xl:mb-[14px]"
+              >
+                Usability
+              </h4>
+              <p
+                class="text-black font-normal text-sm 2xl:text-[16px] 2xl:font-normal 2xl:leading-[20px]"
+              >
                 We work to make them a reality.
               </p>
             </div>
@@ -527,10 +665,16 @@
             />
             <!-- Hoverable card -->
             <div
-              class="bg-white px-6 py-3 max-w-max absolute -bottom-[6.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem]"
+              class="bg-white px-6 py-3 max-w-max absolute -bottom-[8.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem] 2xl:py-6 2xl:px-8"
             >
-              <h4 class="text-black text-xl font-medium">Usability</h4>
-              <p class="text-black font-normal text-sm">
+              <h4
+                class="text-[#141820] text-xl font-medium 2xl:text-[30px] 2xl:font-bold 2xl:tracking-[-0.6px] 2xl:mb-[14px]"
+              >
+                Usability
+              </h4>
+              <p
+                class="text-black font-normal text-sm 2xl:text-[16px] 2xl:font-normal 2xl:leading-[20px]"
+              >
                 We work to make them a reality.
               </p>
             </div>
@@ -545,10 +689,16 @@
             />
             <!-- Hoverable card -->
             <div
-              class="bg-white px-6 py-3 max-w-max absolute -bottom-[6.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem]"
+              class="bg-white px-6 py-3 max-w-max absolute -bottom-[8.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem] 2xl:py-6 2xl:px-8"
             >
-              <h4 class="text-black text-xl font-medium">Usability</h4>
-              <p class="text-black font-normal text-sm">
+              <h4
+                class="text-[#141820] text-xl font-medium 2xl:text-[30px] 2xl:font-bold 2xl:tracking-[-0.6px] 2xl:mb-[14px]"
+              >
+                Usability
+              </h4>
+              <p
+                class="text-black font-normal text-sm 2xl:text-[16px] 2xl:font-normal 2xl:leading-[20px]"
+              >
                 We work to make them a reality.
               </p>
             </div>
@@ -563,10 +713,16 @@
             />
             <!-- Hoverable card -->
             <div
-              class="bg-white px-6 py-3 max-w-max absolute -bottom-[6.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem]"
+              class="bg-white px-6 py-3 max-w-max absolute -bottom-[8.25rem] left-[1.25rem] shadow-2xl transition-all duration-300 ease-in-out group-hover:bottom-[1.25rem] 2xl:py-6 2xl:px-8"
             >
-              <h4 class="text-black text-xl font-medium">Usability</h4>
-              <p class="text-black font-normal text-sm">
+              <h4
+                class="text-[#141820] text-xl font-medium 2xl:text-[30px] 2xl:font-bold 2xl:tracking-[-0.6px] 2xl:mb-[14px]"
+              >
+                Usability
+              </h4>
+              <p
+                class="text-black font-normal text-sm 2xl:text-[16px] 2xl:font-normal 2xl:leading-[20px]"
+              >
                 We work to make them a reality.
               </p>
             </div>
@@ -577,22 +733,28 @@
     <!-- Portfolio End -->
 
     <!-- Skills Start -->
-    <section class="pb-14">
+    <section class="pb-14 2xl:pb-[140px]">
       <div class="max-w-[75.625rem] mx-auto px-4">
-        <div class="md:flex md:items-center md:gap-x-6">
+        <div class="md:flex md:items-center md:gap-x-6 lg:gap-x-16">
           <!-- Expertise -->
-          <div class="mb-10 max-w-[30.625rem] md:basis-1/2">
+          <div
+            class="mb-10 max-w-[30.625rem] md:basis-1/2 2xl:max-w-none 2xl:mb-0"
+          >
             <!-- sub title -->
-            <h5 class="list-disc uppercase text-stone-300 text-sm mb-2 sm:mb-5">
+            <h5
+              class="list-disc uppercase text-stone-300 text-sm mb-2 sm:mb-5 2xl:font-bold 2xl:leading-normal 2xl:tracking-[1.4px] 2xl:mb-[26px]"
+            >
               <li class="list-disc">Our expertise</li>
             </h5>
             <!-- title -->
             <h2
-              class="text-3xl font-medium mb-5 sm:text-4xl lg:text-5xl lg:leading-[65px] xl:text-[3.2rem]"
+              class="text-4xl text-white leading-[44px] mb-8 sm:text-4xl md:text-5xl md:leading-[64px] lg:text-6xl lg:leading-[75px] 2xl:w-[637px] 2xl:text-[60px] 2xl:font-bold 2xl:leading-[64px] 2xl:tracking-[-1.2px] 2xl:max-w-none 2xl:mb-[40px]"
             >
               Your expertise and experience in business growth
             </h2>
-            <p class="text-sm font-light mb-8">
+            <p
+              class="text-sm font-light mb-8 2xl:w-[510px] 2xl:text-[16px] 2xl:leading-[24px] 2xl:font-normal 2xl:mb-[40px]"
+            >
               We will help you identify your target market, develop a marketing
               plan, and grow your customer base.
             </p>
@@ -610,17 +772,26 @@
             </a>
           </div>
           <!-- skills bar -->
-          <div class="flex flex-col gap-y-6 md:basis-1/2">
+          <div
+            class="flex flex-col gap-y-6 md:basis-1/2 2xl:self-end 2xl:gap-y-[40px]"
+          >
             <!-- UX Design -->
             <div class="space-y-4">
               <div class="flex justify-between">
-                <h6>UX design</h6>
-                <span>75%</span>
+                <h6
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                >
+                  UX design
+                </h6>
+                <span
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                  >75%</span
+                >
               </div>
               <!-- slider range -->
-              <div class="w-full bg-gray-800 h-2">
+              <div class="w-full bg-gray-800 h-[6px]">
                 <span
-                  class="relative w-[75%] bg-indigo-500 block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
+                  class="relative w-[75%] bg-[#3FABE3] block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
                 ></span>
               </div>
             </div>
@@ -628,13 +799,20 @@
             <!-- API Development -->
             <div class="space-y-4">
               <div class="flex justify-between">
-                <h6>API Development</h6>
-                <span>82%</span>
+                <h6
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                >
+                  API Development
+                </h6>
+                <span
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                  >82%</span
+                >
               </div>
               <!-- slider range -->
-              <div class="w-full bg-gray-800 h-2">
+              <div class="w-full bg-gray-800 h-[6px]">
                 <span
-                  class="relative w-[82%] bg-indigo-500 block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
+                  class="relative w-[82%] bg-[#3FABE3] block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
                 ></span>
               </div>
             </div>
@@ -642,13 +820,20 @@
             <!-- Email Marketing -->
             <div class="space-y-4">
               <div class="flex justify-between">
-                <h6>Email Marketing</h6>
-                <span>64%</span>
+                <h6
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                >
+                  Email Marketing
+                </h6>
+                <span
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                  >64%</span
+                >
               </div>
               <!-- slider range -->
-              <div class="w-full bg-gray-800 h-2">
+              <div class="w-full bg-gray-800 h-[6px]">
                 <span
-                  class="relative w-[64%] bg-indigo-500 block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
+                  class="relative w-[64%] bg-[#3FABE3] block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
                 ></span>
               </div>
             </div>
@@ -656,13 +841,20 @@
             <!-- React Development -->
             <div class="space-y-4">
               <div class="flex justify-between">
-                <h6>React Development</h6>
-                <span>72%</span>
+                <h6
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                >
+                  React Development
+                </h6>
+                <span
+                  class="2xl:text-[18px] 2xl:font-semibold 2xl:leading-[24px]"
+                  >72%</span
+                >
               </div>
               <!-- slider range -->
-              <div class="w-full bg-gray-800 h-2">
+              <div class="w-full bg-gray-800 h-[6px]">
                 <span
-                  class="relative w-[72%] bg-indigo-500 block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
+                  class="relative w-[72%] bg-[#3FABE3] block h-full before:absolute before:w-[2px] before:h-5 before:right-0 before:top-1/2 before:bg-indigo-500 before:-translate-y-1/2"
                 ></span>
               </div>
             </div>
@@ -673,33 +865,65 @@
     <!-- Skills End -->
 
     <!-- Counter Start -->
-    <section class="pb-14">
+    <section class="pb-14 2xl:pb-[140px]">
       <div class="max-w-[75.625rem] mx-auto px-4">
         <div class="grid grid-cols-2 gap-y-12 gap-x-5 md:grid-cols-4">
-          <div class="space-y-2 border-l border-secondary-color pl-6">
-            <h4 class="text-5xl font-medium">45+</h4>
-            <h6 class="text-sm uppercase font-light text-stone-300">
+          <div
+            class="space-y-2 border-l border-secondary-color pl-6 2xl:space-y-[24px]"
+          >
+            <h4
+              class="text-5xl font-normal 2xl:text-[70px] 2xl:leading-[64px] 2xl:tracking-[-1.4px]"
+            >
+              45+
+            </h4>
+            <h6
+              class="text-sm uppercase font-light text-stone-300 2xl:text-[16px] 2xl:font-medium 2xl:leading-normal 2xl:tracking-[-0.32px]"
+            >
               Realized Projects
             </h6>
           </div>
 
-          <div class="space-y-2 border-l border-secondary-color pl-6">
-            <h4 class="text-5xl font-medium">16+</h4>
-            <h6 class="text-sm uppercase font-light text-stone-300">
+          <div
+            class="space-y-2 border-l border-secondary-color pl-6 2xl:space-y-[24px]"
+          >
+            <h4
+              class="text-5xl font-normal 2xl:text-[70px] 2xl:leading-[64px] 2xl:tracking-[-1.4px]"
+            >
+              16+
+            </h4>
+            <h6
+              class="text-sm uppercase font-light text-stone-300 2xl:text-[16px] 2xl:font-medium 2xl:leading-normal 2xl:tracking-[-0.32px]"
+            >
               Years experiences
             </h6>
           </div>
 
-          <div class="space-y-2 border-l border-secondary-color pl-6">
-            <h4 class="text-5xl font-medium">96+</h4>
-            <h6 class="text-sm uppercase font-light text-stone-300">
+          <div
+            class="space-y-2 border-l border-secondary-color pl-6 2xl:space-y-[24px]"
+          >
+            <h4
+              class="text-5xl font-normal 2xl:text-[70px] 2xl:leading-[64px] 2xl:tracking-[-1.4px]"
+            >
+              96+
+            </h4>
+            <h6
+              class="text-sm uppercase font-light text-stone-300 2xl:text-[16px] 2xl:font-medium 2xl:leading-normal 2xl:tracking-[-0.32px]"
+            >
               Happy customers
             </h6>
           </div>
 
-          <div class="space-y-2 border-l border-secondary-color pl-6">
-            <h4 class="text-5xl font-medium">14+</h4>
-            <h6 class="text-sm uppercase font-light text-stone-300">
+          <div
+            class="space-y-2 border-l border-secondary-color pl-6 2xl:space-y-[24px]"
+          >
+            <h4
+              class="text-5xl font-normal 2xl:text-[70px] 2xl:leading-[64px] 2xl:tracking-[-1.4px]"
+            >
+              14+
+            </h4>
+            <h6
+              class="text-sm uppercase font-light text-stone-300 2xl:text-[16px] 2xl:font-medium 2xl:leading-normal 2xl:tracking-[-0.32px]"
+            >
               trusted partners
             </h6>
           </div>
@@ -709,21 +933,23 @@
     <!-- Counter End -->
 
     <!-- Team Start -->
-    <section class="py-14 bg-gradient-to-b from-[#171B23] to-[#141820]">
+    <section
+      class="py-14 2xl:py-20 bg-gradient-to-b from-[#171B23] to-[#141820]"
+    >
       <div class="max-w-[75.625rem] mx-auto px-4">
         <!-- Top -->
         <div
-          class="mb-12 max-w-[23.75rem] mx-auto sm:max-w-[28rem] lg:max-w-[40rem]"
+          class="mb-12 max-w-[23.75rem] mx-auto sm:max-w-[28rem] lg:max-w-[44rem] 2xl:mb-[70px]"
         >
           <!-- sub title -->
           <h5
-            class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5"
+            class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5 2xl:font-bold 2xl:leading-normal 2xl:tracking-[1.4px] 2xl:mb-[26px]"
           >
             <li class="list-disc">the team</li>
           </h5>
           <!-- title -->
           <h2
-            class="text-3xl text-center font-medium mb-5 sm:text-4xl lg:text-5xl lg:leading-[65px] xl:text-[3.2rem]"
+            class="text-4xl text-center text-white leading-[44px] mb-8 sm:text-4xl md:text-5xl md:leading-[64px] lg:text-6xl lg:leading-[75px] 2xl:w-[690px] 2xl:text-[60px] 2xl:font-bold 2xl:leading-[64px] 2xl:tracking-[-1.2px] 2xl:max-w-none 2xl:mb-[40px]"
           >
             The specific project that the team is working on
           </h2>
@@ -746,10 +972,16 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
                     Bodrum Salvador
                   </h4>
-                  <p class="text-black font-light text-sm">CEO-Founder</p>
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
+                    CEO-Founder
+                  </p>
                 </div>
                 <div>
                   <a
@@ -798,10 +1030,16 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
                     Bodrum Salvador
                   </h4>
-                  <p class="text-black font-light text-sm">Business Manager</p>
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
+                    Business Manager
+                  </p>
                 </div>
                 <div>
                   <a
@@ -850,8 +1088,16 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">Jake Weary</h4>
-                  <p class="text-black font-light text-sm">UI Designer</p>
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
+                    Jake Weary
+                  </h4>
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
+                    UI Designer
+                  </p>
                 </div>
                 <div>
                   <a
@@ -900,8 +1146,16 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">Penny Tool</h4>
-                  <p class="text-black font-light text-sm">QA Analyst</p>
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
+                    Penny Tool
+                  </h4>
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
+                    QA Analyst
+                  </p>
                 </div>
                 <div>
                   <a
@@ -950,10 +1204,16 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
                     Dianne Ameter
                   </h4>
-                  <p class="text-black font-light text-sm">Web designer</p>
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
+                    Web designer
+                  </p>
                 </div>
                 <div>
                   <a
@@ -1002,10 +1262,16 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
                     Gunther Beard
                   </h4>
-                  <p class="text-black font-light text-sm">Project manager</p>
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
+                    Project manager
+                  </p>
                 </div>
                 <div>
                   <a
@@ -1054,10 +1320,14 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
                     Indigo Violet
                   </h4>
-                  <p class="text-black font-light text-sm">
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
                     Customer relations
                   </p>
                 </div>
@@ -1108,10 +1378,16 @@
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <h4 class="text-black text-base font-semibold">
+                  <h4
+                    class="text-[#171B24] text-base leading-normal font-bold 2xl:text-[18px] 2xl:tracking-[-0.36px] 2xl:leading-normal"
+                  >
                     Eleanor Fant
                   </h4>
-                  <p class="text-black font-light text-sm">Support engineer</p>
+                  <p
+                    class="text-[#57595C] font-light text-sm leading-normal 2xl:text-[14px] 2xl:leading-[20px]"
+                  >
+                    Support engineer
+                  </p>
                 </div>
                 <div>
                   <a
@@ -1151,7 +1427,9 @@
     <!-- Team END -->
 
     <!-- Testimonials START -->
-    <section class="py-14 bg-gradient-to-b from-[#03112d] to-[#0d0e10]">
+    <section
+      class="py-14 2xl:pb-[120px] bg-gradient-to-b from-[#03112d] to-[#0d0e10]"
+    >
       <div class="max-w-[120rem] ml-auto pl-4 2xl:ml-0 2xl:pl-0">
         <div class="lg:ml-14 2xl:ml-16 relative">
           <!-- top -->
@@ -1160,7 +1438,7 @@
           >
             <!-- sub title -->
             <h5
-              class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5"
+              class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5 2xl:text-[14px] 2xl:font-bold 2xl:leading-normal 2xl:tracking-[1.4px]"
             >
               <li class="list-disc">Testimonials</li>
             </h5>
@@ -1173,11 +1451,11 @@
           </div>
 
           <div
-            class="flex flex-col gap-y-8 md:flex-row md:gap-x-6 md:gap-y-0 md:items-center md:justify-end 2xl:justify-center"
+            class="flex flex-col gap-y-8 md:flex-row md:gap-x-6 md:gap-y-0 md:items-center md:justify-end 2xl:justify-center 2xl:gap-x-28"
           >
             <!-- feedback -->
             <div
-              class="order-2 md:order-1 md:max-w-[25.125rem] relative h-full"
+              class="order-2 md:order-1 md:max-w-[25.125rem] relative h-full 2xl:max-w-none 2xl:w-[486px]"
             >
               <!-- top -->
               <div
@@ -1191,16 +1469,20 @@
                 </h5>
                 <!-- title -->
                 <h2
-                  class="text-3xl text-start font-medium mb-5 sm:text-4xl lg:text-5xl lg:leading-[65px] xl:text-[3.2rem]"
+                  class="text-3xl text-start font-medium mb-5 sm:text-4xl lg:text-5xl lg:leading-[65px] xl:text-[3.2rem] 2xl:text-[60px] 2xl:font-bold 2xl:leading-[60px]"
                 >
                   What clients say about us
                 </h2>
               </div>
 
-              <span class="text-6xl text-[#27B5FF] inline-block leading-none">
+              <span
+                class="text-6xl text-[#27B5FF] inline-block leading-none 2xl:mb-5"
+              >
                 <i class="fa-solid fa-quote-left"></i>
               </span>
-              <p class="text-sm font-light mb-6">
+              <p
+                class="text-sm font-light mb-6 2xl:text-[16px] 2xl:font-normal 2xl:leading-[24px] 2xl:mb-[54px]"
+              >
                 We will help you identify your target market, develop a
                 marketing plan, and grow your customer base. We are committed to
                 helping you succeed, and we will work with you every step of the
@@ -1257,7 +1539,7 @@
     <!-- Testimonials END -->
 
     <!-- Blog START -->
-    <section class="py-14">
+    <section class="py-14 2xl:py-[120px]">
       <div class="max-w-[75rem] mx-auto px-4">
         <!-- Top -->
         <div
@@ -1265,13 +1547,13 @@
         >
           <!-- sub title -->
           <h5
-            class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5"
+            class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5 2xl:text-[14px] 2xl:font-bold 2xl:leading-normal 2xl:tracking-[1.4px]"
           >
             <li class="list-disc">Newest Article</li>
           </h5>
           <!-- title -->
           <h2
-            class="text-3xl text-center font-medium mb-5 sm:text-4xl lg:text-5xl lg:leading-[65px] xl:text-[3.2rem]"
+            class="text-3xl text-center font-medium mb-5 sm:text-4xl lg:text-5xl lg:leading-[65px] xl:text-[3.2rem] 2xl:text-[60px] 2xl:font-bold 2xl:leading-[60px] 2xl:tracking-[-1.2px]"
           >
             Latest posts
           </h2>
@@ -1294,13 +1576,19 @@
               />
             </div>
             <!-- publish date -->
-            <div class="flex items-center gap-x-3 mb-4">
-              <span>14 January, 2024</span>
-              <li class="marker:text-secondary-color">UI design</li>
+            <div class="flex items-center gap-x-3 mb-4 2xl:mb-5">
+              <span class="2xl:text-[14px] 2xl:font-medium 2xl:leading-[20px]"
+                >14 January, 2024</span
+              >
+              <li
+                class="marker:text-secondary-color 2xl:text-[14px] 2xl:font-medium 2xl:leading-[20px]"
+              >
+                UI design
+              </li>
             </div>
             <!-- blog title -->
             <h3
-              class="text-2xl font-medium mb-6 max-w-sm group-hover:text-primary-color transition-all duration-300 ease-in-out flex-1"
+              class="text-2xl font-medium mb-6 max-w-sm group-hover:text-primary-color transition-all duration-300 ease-in-out flex-1 2xl:text-[22px] 2xl:font-bold 2xl:leading-[30px]"
             >
               The fastest way to grow your business with us
             </h3>
@@ -1309,7 +1597,11 @@
               <span>
                 <img src="assets/blog-author-1.png" alt="tryesy author" />
               </span>
-              <h6 class="text-sm font-light">Esther Howard</h6>
+              <h6
+                class="text-sm font-light 2xl:font-semibold 2xl:leading-[20px]"
+              >
+                Esther Howard
+              </h6>
             </div>
           </div>
 
@@ -1326,13 +1618,19 @@
               />
             </div>
             <!-- publish date -->
-            <div class="flex items-center gap-x-3 mb-4">
-              <span>26 January, 2024</span>
-              <li class="marker:text-secondary-color">Creative</li>
+            <div class="flex items-center gap-x-3 mb-4 2xl:mb-5">
+              <span class="2xl:text-[14px] 2xl:font-medium 2xl:leading-[20px]"
+                >26 January, 2024</span
+              >
+              <li
+                class="marker:text-secondary-color 2xl:text-[14px] 2xl:font-medium 2xl:leading-[20px]"
+              >
+                Creative
+              </li>
             </div>
             <!-- blog title -->
             <h3
-              class="text-2xl font-medium mb-6 max-w-sm group-hover:text-primary-color transition-all duration-300 ease-in-out"
+              class="text-2xl font-medium mb-6 max-w-sm group-hover:text-primary-color transition-all duration-300 ease-in-out flex-1 2xl:text-[22px] 2xl:font-bold 2xl:leading-[30px]"
             >
               How to upgrade your UX skills In 2024 online?
             </h3>
@@ -1341,7 +1639,11 @@
               <span>
                 <img src="assets/blog-author-2.png" alt="tryesy author" />
               </span>
-              <h6 class="text-sm font-light">Jane Cooper</h6>
+              <h6
+                class="text-sm font-light 2xl:font-semibold 2xl:leading-[20px]"
+              >
+                Jane Cooper
+              </h6>
             </div>
           </div>
 
@@ -1358,13 +1660,19 @@
               />
             </div>
             <!-- publish date -->
-            <div class="flex items-center gap-x-3 mb-4">
-              <span>15 February, 2024</span>
-              <li class="marker:text-secondary-color">Agency</li>
+            <div class="flex items-center gap-x-3 mb-4 2xl:mb-5">
+              <span class="2xl:text-[14px] 2xl:font-medium 2xl:leading-[20px]"
+                >15 February, 2024</span
+              >
+              <li
+                class="marker:text-secondary-color 2xl:text-[14px] 2xl:font-medium 2xl:leading-[20px]"
+              >
+                Agency
+              </li>
             </div>
             <!-- blog title -->
             <h3
-              class="text-2xl font-medium mb-6 max-w-sm group-hover:text-primary-color transition-all duration-300 ease-in-out"
+              class="text-2xl font-medium mb-6 max-w-sm group-hover:text-primary-color transition-all duration-300 ease-in-out flex-1 2xl:text-[22px] 2xl:font-bold 2xl:leading-[30px]"
             >
               Ways of lying to yourself about your new relationship.
             </h3>
@@ -1373,7 +1681,11 @@
               <span>
                 <img src="assets/blog-author-3.png" alt="tryesy author" />
               </span>
-              <h6 class="text-sm font-light">Dianne Russell</h6>
+              <h6
+                class="text-sm font-light 2xl:font-semibold 2xl:leading-[20px]"
+              >
+                Dianne Russell
+              </h6>
             </div>
           </div>
         </div>
@@ -1392,17 +1704,17 @@
         <div class="py-14 lg:py-20">
           <!-- top -->
           <div
-            class="mb-12 max-w-[23.75rem] mx-auto sm:max-w-[28rem] lg:max-w-[40rem]"
+            class="mb-12 max-w-[23.75rem] mx-auto sm:max-w-[28rem] lg:max-w-[40rem] 2xl:max-w-[45rem]"
           >
             <!-- sub title -->
             <h5
-              class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5"
+              class="list-disc text-center uppercase text-stone-300 text-sm mb-2 sm:mb-5 2xl:text-[14px] 2xl:font-bold 2xl:leading-normal 2xl:tracking-[1.4px]"
             >
               <li class="list-disc">Newsletter</li>
             </h5>
             <!-- title -->
             <h2
-              class="text-3xl text-center font-medium mb-5 sm:text-4xl lg:leading-[50px]"
+              class="text-3xl text-center font-medium mb-5 sm:text-4xl lg:leading-[50px] 2xl:text-[40px] 2xl:font-extrabold 2xl:tracking-[-0.8px]"
             >
               Subscribe to our newsletter and get 15% off your next
               <span class="text-[#FD4185] relative z-10 text-nowrap">
@@ -1423,9 +1735,6 @@
                     stroke-linecap="round"
                   />
                 </svg>
-
-                <!-- <hr class="absolute bottom-0 left-0 w-32 h-[2px] border-none bg-rose-500 z-20 -rotate-[5deg]">
-                <hr class="absolute -bottom-3 left-0 w-16 h-[2px] border-none bg-rose-500 z-20 -rotate-[5deg] skew-x-6"> -->
               </span>
             </h2>
           </div>
@@ -1438,7 +1747,7 @@
                 name="userEmail"
                 id="newsLetter"
                 placeholder="Your email to start"
-                class="h-11 pl-3 pr-[37%] text-black outline-none border border-transparent placeholder:text-stone-600 placeholder:text-sm text-sm w-full"
+                class="h-11 pl-3 pr-[37%] text-black outline-none border border-transparent placeholder:text-stone-600 placeholder:text-sm text-sm w-full 2xl:font-medium 2xl:leading-[20px]"
               />
 
               <button
@@ -1472,12 +1781,17 @@
           <!-- Site -->
           <div class="basis-full md:basis-auto">
             <!-- footer logo -->
-            <a href="#" class="flex items-center gap-x-3 mb-5">
+            <a href="#" class="flex items-center gap-x-3 mb-5 2xl:mb-11">
               <img src="/assets/icons/tryesy-logo.png" alt="tryesy logo" />
-              <span class="text-xl font-medium">Tryesy.</span>
+              <span
+                class="text-xl font-medium 2xl:text-[30px] 2xl:font-extrabold 2xl:leading-normal 2xl:tracking-[-0.6px]"
+                >Tryesy.</span
+              >
             </a>
             <!-- slogan -->
-            <p class="text-sm text-stone-300 mb-6 max-w-[23.4375rem]">
+            <p
+              class="text-sm text-stone-300 mb-6 max-w-[23.4375rem] 2xl:text-[16px] 2xl:leading-[24px] 2xl:font-medium 2xl:mb-[50px]"
+            >
               We are committed to helping you succeed, and we will work with you
               every step of the way.
             </p>
@@ -1486,7 +1800,10 @@
               href="#"
               class="flex items-center gap-x-3 transition-all duration-300 ease-in-out hover:opacity-65"
             >
-              <span class="text-sm">Get Updates</span>
+              <span
+                class="text-sm 2xl:text-[16px] 2xl:font-semibold 2xl:leading-[24px]"
+                >Get Updates</span
+              >
               <span class="text-sm">
                 <i class="fa-solid fa-arrow-right"></i>
               </span>
@@ -1495,7 +1812,11 @@
           <!-- INFO -->
           <div>
             <!-- title -->
-            <h5 class="text-xl font-normal uppercase mb-4">Info</h5>
+            <h5
+              class="text-xl font-normal uppercase mb-4 2xl:font-bold 2xl:text-[20px]"
+            >
+              Info
+            </h5>
             <ul class="flex flex-col gap-y-5">
               <li>
                 <a
@@ -1505,7 +1826,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Company</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Company</span
+                  >
                 </a>
               </li>
               <li>
@@ -1516,7 +1840,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Video Tutorials</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Video Tutorials</span
+                  >
                 </a>
               </li>
               <li>
@@ -1527,7 +1854,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Careers</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Careers</span
+                  >
                 </a>
               </li>
             </ul>
@@ -1535,7 +1865,11 @@
           <!-- COMPANY -->
           <div>
             <!-- title -->
-            <h5 class="text-xl font-normal uppercase mb-4">Company</h5>
+            <h5
+              class="text-xl font-normal uppercase mb-4 2xl:font-bold 2xl:text-[20px]"
+            >
+              Company
+            </h5>
             <ul class="flex flex-col gap-y-5">
               <li>
                 <a
@@ -1545,7 +1879,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Products</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Products</span
+                  >
                 </a>
               </li>
               <li>
@@ -1556,7 +1893,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Services</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Services</span
+                  >
                 </a>
               </li>
               <li>
@@ -1567,7 +1907,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Customers</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Customers</span
+                  >
                 </a>
               </li>
               <li>
@@ -1578,7 +1921,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Pricing</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Pricing</span
+                  >
                 </a>
               </li>
               <li>
@@ -1589,7 +1935,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Help Center</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Help Center</span
+                  >
                 </a>
               </li>
               <li>
@@ -1600,7 +1949,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Contact</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Contact</span
+                  >
                 </a>
               </li>
             </ul>
@@ -1618,7 +1970,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Marketing</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Marketing</span
+                  >
                 </a>
               </li>
               <li>
@@ -1629,7 +1984,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Integrations</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Integrations</span
+                  >
                 </a>
               </li>
               <li>
@@ -1640,7 +1998,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Templates</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Templates</span
+                  >
                 </a>
               </li>
               <li>
@@ -1651,7 +2012,10 @@
                   <span class="text-xs">
                     <i class="fa-solid fa-chevron-right"></i>
                   </span>
-                  <span class="text-sm">Portfolios</span>
+                  <span
+                    class="text-sm 2xl:text-[16] 2xl:font-medium 2xl:leading-[34px]"
+                    >Portfolios</span
+                  >
                 </a>
               </li>
             </ul>
@@ -1664,7 +2028,9 @@
         >
           <!-- left -->
           <div class="sm:flex sm:items-center sm:gap-x-4">
-            <h5 class="uppercase text-stone-400 text-sm mb-4 sm:mb-0">Follow US</h5>
+            <h5 class="uppercase text-stone-400 text-sm mb-4 sm:mb-0">
+              Follow US
+            </h5>
             <ul class="flex items-center gap-x-5">
               <li>
                 <a
@@ -1702,7 +2068,7 @@
           <div>
             <p class="text-stone-400">
               &copy; 2024
-              <span class="text-white font-medium">Tryesy.</span> 
+              <span class="text-white font-medium">Tryesy.</span>
               All Rights Reserved.
             </p>
           </div>
